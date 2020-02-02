@@ -86,7 +86,7 @@ previsoes = modelo.predict(teste_x)
 acuracia = accuracy_score(teste_y, previsoes) * 100
 print("A acurácia foi %.2f%%" % acuracia)
 
-treino_y.value_counts()
+treino_y['comprou'].value_counts()
 
-teste_y.value_counts()
+teste_y['comprou'].value_counts()
 
